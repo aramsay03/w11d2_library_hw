@@ -10,7 +10,12 @@ public class Borrower {
         this.collection = new ArrayList<Book>();
     }
 
-    public int booksBowroed() {
+    public int booksBowrroed() {
         return this.collection.size();
+    }
+
+    public void borrowBook(Library library) {
+        Book book = library.removeBookFromStock();
+        this.collection.add(book);
     }
 }
