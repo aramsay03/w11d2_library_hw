@@ -30,4 +30,12 @@ public class LibraryTest {
         assertEquals(1, library.bookCount());
     }
 
+    @Test
+    public void checkThatBookCantBeAddIfAtCapacity() {
+        library = new Library("Personal Book Collection", 1);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        assertEquals(1, library.bookCount());
+    }
+
 }
