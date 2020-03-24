@@ -11,7 +11,7 @@ public class LibraryTest {
     @Before
     public void setup() {
         library = new Library();
-        book = new Book();
+        book = new Book("The Clean Coder", "Robert C Martin", "Computer Programming");
 //        book = new Book("The Clean Coder", "Robert C Martin", "Computer Programming");
     }
 
@@ -25,8 +25,9 @@ public class LibraryTest {
     @Test
     public void canBookBeAddedToStock() {
         // ACT
-        library.
+        library.addBookToStock(book);
         // ASSERT
+        assertEquals(1, library.bookCount());
     }
 
 }
