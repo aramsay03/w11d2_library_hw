@@ -12,7 +12,6 @@ public class LibraryTest {
     public void setup() {
         library = new Library("CodeClan Book Shelf", 10);
         book = new Book("The Clean Coder", "Robert C Martin", "Computer Programming");
-//        book = new Book("The Clean Coder", "Robert C Martin", "Computer Programming");
     }
 
 //      Check that number of books in stock
