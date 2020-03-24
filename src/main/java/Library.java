@@ -25,4 +25,8 @@ public class Library {
     public boolean checkCapacity() {
         return this.capacity > bookCount();
     }
+
+    public Book removeBookFromStock() {
+        return this.stock.remove(0);
+    }
 }
